@@ -100,26 +100,28 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-8 font-open">
-            <a href="/" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-7 font-open text-sm xl:text-base">
+            <a href="/" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors">
               Inicio
             </a>
-            <a href="/about" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+            <a href="/about" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors whitespace-nowrap">
               Sobre Nosotros
             </a>
-            <a href="/products" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+            <a href="/products" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors">
               Productos
             </a>
-            <a href="/services" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+            <a href="/services" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors">
               Servicios
             </a>
-            <a href="/PQRS" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+            <a href="/PQRS" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors">
               PQRS
             </a>
-            <a href="/etic" className="text-white hover:text-orange-600 px-3 py-2 font-medium transition-colors">
+            <a href="/etic" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors whitespace-nowrap">
               Línea Ética
             </a>
-
+            <a href="/trabaja-con-nosotros" className="text-white hover:text-orange-600 px-2 xl:px-3 py-2 font-medium transition-colors whitespace-nowrap">
+              Trabaja con Nosotros
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -166,48 +168,62 @@ export default function Navbar() {
             animate="open"
             exit="closed"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black bg-opacity-95">
+            <div className="px-4 pt-3 pb-5 space-y-1 bg-gradient-to-br from-white via-white to-orange-600 shadow-2xl border-t border-white/20">
               <motion.a
                 href="/"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 Inicio
               </motion.a>
               <motion.a
                 href="/about"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 Sobre nosotros
               </motion.a>
               <motion.a
                 href="/products"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 Productos
               </motion.a>
               <motion.a
                 href="/services"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 Servicios
               </motion.a>
               <motion.a
                 href="/PQRS"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 PQRS
               </motion.a>
               <motion.a
                 href="/etic"
-                className="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:text-orange-600 hover:bg-black"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
                 variants={itemVariants}
               >
                 Línea Ética
+              </motion.a>
+              <motion.a
+                href="/trabaja-con-nosotros"
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2.5 rounded-xl text-base font-semibold text-[#561A16] hover:text-[#C6441C] hover:bg-white/60 transition-all duration-200"
+                variants={itemVariants}
+              >
+                Trabaja con Nosotros
               </motion.a>
 
             </div>
